@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Ruang Buku</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+<link href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!---->
+    <!--INI JAM DAN TANGGAL-->
+    <!---->
+  <div class="wrapper">
+    <div class="tanggal">
+        <script type='text/javascript'>
+            <!--
+            var today = new Date();
+            var dd = String(today.getDate());
+            var mm = String(today.getMonth() + 1); //January is 0!
+            var yyyy = today.getFullYear();
+
+            today = dd + '/' + mm + '/' + yyyy;
+            document.write(today);
+            //-->
+        </script>
+      <div id='jam' ></div>
+          <script type="text/javascript">
+          // 1 detik = 1000
+          setTimeout("waktu()",1000);  
+          function waktu() {   
+          var tanggal = new Date();  
+          setTimeout("waktu()",1000);  
+          document.getElementById("jam").innerHTML = tanggal.getHours()+":"+tanggal.getMinutes()+":"+tanggal.getSeconds();
+          }
+          </script>
+    </div>
+  </div>
+
+     
+      <p><marquee>Selamat Datang Di RuangBUKU</marquee></p>
+    <!---->
+    <!--INI LOGO DAN MENU-->
+    <!---->
+      <nav>  
+        <div class="wrapper">
+          <div class="logo">
+            <a href="">RuangBUKU</a>
+          </div>
+          <div class="menu">
+            <ul>
+              <li class="active"><a href="#home">Home</a></li> 
+              <li><a href="#genrebuku" >Genre Buku</a></li>
+              <li><a href="#team">Team</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="" class="tmbl">Login</a></li>
+            </ul>
+          <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+            <script type="text/javascript">
+              $(document).on('click','ul li',function(){
+                  $(this).addClass('active').siblings().removeClass('active')
+              })
+            </script>
+          </div>
+        </div>    
+      </nav>
+    <!---->
+    <!--INI Home DAN Slogan-->
+    <!---->
+      <div class="wrapper">
+        <section id="home">
+            <div class="gmbr">
+                <img src="img/library.jpg" alt=""></div>
+            <div class="kolom">
+              <p class="deskripsi">Ruang Adalah Wadah </p>
+              <h2>Buku Adalah Jendela Dunia </h2>
+              <p>Membaca dapat merusak kebodohan dan Untuk mencapai puncak,
+              kita harus berdiri diatas buku yang telah kita baca </p>
+              <p><a href="https://id.wikipedia.org/wiki/Perpustakaan" class="tmbl2">Pelajari Selengkapnya</p></a>
+            </div>
+        </section>
+      </div>
+
+    <div class="wrapper">
+     <section class="slogan">
+        <div class="kolom">
+          <p class="deskripsi">Ilmu apa yang kamu dapatkan hari ini ?</p>
+          <h2>Berapa banyak buku yang sudah kamu baca?</h2>
+          <p>Semua orang adalah pembaca buku, sebagian orang mungkin belum mendapatkan buku kesukaanya dan disini kamu akan mendapatkan buku kesukaanmu.</p>
+        </div>
+        <div class="gmbr">
+          <img src="img/buku5.png" alt="">
+      </section>
+    </div>
+
+    <!---->
+    <!--INI Genre BUKU-->
+    <!---->
+
+      <section id="genrebuku">
+        <div class="wrapper">
+          <h1 class="title">Genre Buku</h1>
+            <div class="Container">
+              <div class="box">
+                <p class="buku">Knowledge</p>
+                <div class="slider">
+                  <div class="slide">
+                  <img src="img/1.jpg">
+                  <div class="Judulbuku">Homo Deus</div>
+                  <div class="sinopsis">
+                  <p>Pada masa lalu, manusia menaklukkan dunia berkat kemampuan uniknya untuk percaya pada mitos-mitos kolektif
+                   tentang dewa, uang, kesetaraan dan kebebasan—seperti dijelaskan dalam buku Sapiens.</p>
+                  </div>
+                  <div class="tmbl-buku">
+                    <a href="https://thanianbbn.blogspot.com/2021/05/general-knowledge.html" class="tmblbuku">Baca Selengkapnya</a>
+                  </div>
+                </div>
+                <div class="slide">
+                  <img src="img/2.jpg">
+                  <div class="Judulbuku">Cosmos</div>
+                  <div class="sinopsis">
+                  <p>Kosmos menelusuri empat belas miliar evolusi kosmik yang telah mengubah zat menjadi kesadaran,
+                  asal-usul kehidupan, misi wahana antariksa, rupa beraneka planet dan bintang, alur hidup tata surya dan galaksi</p>
+                  </div>
+                  <div class="tmbl-buku">
+                    <a href="https://thanianbbn.blogspot.com/2021/05/general-knowledge_20.html" class="tmblbuku">Baca Selengkapnya</a>
+                  </div>
+                </div>
+
+              </div>
+              </div>
+
+              <div class="box">
+                <p class="buku">Romance</p>
+                <div class="slider">
+                  <div class="slide">
+                  <img src="img/rindu.jpg">
+                  <div class="Judulbuku">Rindu</div>
+                  <div class="sinopsis">
+                  <p>Ini adalah kisah tentang masa lalu yang memilukan. Tentang kebencian kepada seseorang yang seharusnya disayangi. Tentang kehilangan kekasih hati. Tentang cinta sejati. Tentang kemunafikan.</p>
+                  </div>
+                  <div class="tmbl-buku">
+                    <a href="https://talitakurniaa.blogspot.com/2021/05/rindu-judul-buku-rindu-penerbit.html" class="tmblbuku">Baca Selengkapnya</a>
+                  </div>
+                </div>
+                <div class="slide">
+                  <img src="img/31.jpg">
+                  <div class="Judulbuku">The Note Book</div>
+                  <div class="sinopsis">
+                  <p>Noah Calhoun senantiasa dihantui bayang-bayang gadis cantik yang dikenalnya empat belas tahun silam, dan amat dicintainya.Walau mereka tak pernah bertemu lagi, Noah merasa puas hidup dengan kenangan masa lalunya</p>
+                  </div>
+                  <div class="tmbl-buku">
+                    <a href="https://talitakurniaa.blogspot.com/2021/05/the-notebook-judul-notebook-pengarang.html" class="tmblbuku">Baca Selengkapnya</a>
+                  </div>
+                </div>
+
+              </div>
+              </div>
+
+              <div class="box">
+                <p class="buku">Mystery</p>
+                <div class="slider">
+                  <div class="slide">
+                  <img src="img/100.jpg">
+                  <div class="Judulbuku">Conan</div>
+                  <div class="sinopsis">
+                  <p>Shinichi Kudo, seorang detektif SMA berusia 17 tahun yang biasanya membantu polisi memecahkan kasus,
+                   diserang oleh 2 anggota sindikat misterius ketika mengawasi sebuah pemerasan.Ia kemudian diberi minum racun misterius.</p>
+                  </div>
+                  <div class="tmbl-buku">
+                    <a href="https://ahmadputras97.blogspot.com/2021/05/detective-conan.html" class="tmblbuku">Baca Selengkapnya</a>
+                  </div>
+                </div>
+                <div class="slide">
+                  <img src="img/91.jpg">
+                  <div class="Judulbuku">DeathNote</div>
+                  <div class="sinopsis">
+                  <p>menceritakan tentang Light Yagamami, seorang pemuda yang pintar dan sedikit aneh karena dia tidak suka dengan kehidupan sosial.
+                   Light sendiri adalah anak seorang inspektur kepolisian jepang yang sangat di segani.</p>
+                  </div>
+                  <div class="tmbl-buku">
+                    <a href="https://thanianbbn.blogspot.com/2021/05/death-note.html" class="tmblbuku">Baca Selengkapnya</a>
+                  </div>
+                </div>
+
+              </div>
+              </div>
+
+              <div class="box">
+                <p class="buku">Fantasy</p>
+                <div class="slider">
+                  <div class="slide">
+                  <img src="img/61.jpg">
+                  <div class="Judulbuku">Harry Potter</div>
+                  <div class="sinopsis">
+                  <p>Mengisahkan tentang petualangan seorang penyihir remaja bernama 
+                    Harry Potter dan sahabatnya, Ronald Bilius Weasley dan Hermione Jean Granger, 
+                    yang merupakan pelajar di Sekolah Sihir Hogwarts.</p>
+                  </div>
+                  <div class="tmbl-buku">
+                    <a href="https://ahmadputras97.blogspot.com/search/label/20-Mei-2021" class="tmblbuku">Baca Selengkapnya</a>
+                  </div>
+                </div>
+                <div class="slide">
+                  <img src="img/51.jpg">
+                  <div class="Judulbuku">Bumi</div>
+                  <div class="sinopsis">
+                  <p>Raib, seorang gadis berumur 15 tahun. Ia sama seperti remaja lainya. Kecuali satu hal, Sesuatu yang ia simpan sendiri sejak kecil. 
+                    Sesuatu yang menakjubkan. Raib bisa menghilang. Cukup dengan menutup wajah dengan kedua tangan tubuhnya pun menghilang.</p>
+                  </div>
+                  <div class="tmbl-buku">
+                    <a href="https://ahmadputras97.blogspot.com/2021/05/bumi.html" class="tmblbuku">Baca Selengkapnya</a>
+                  </div>
+                </div>
+
+              </div>
+              </div>
+              <div class="box">
+                <p class="buku">Horror</p>
+                <div class="slider">
+                  <div class="slide">
+                  <img src="img/71.jpg">
+                  <div class="Judulbuku">Journal Of Terror</div>
+                  <div class="sinopsis">
+                  <p>Prana dapat melihat penghuni seberang melalui mata saudara kembarnya yang sudah meninggal.Dalam buku Journal of Terror
+                    :Kembar, Sweta Kartika menceritakan kasus-kasus supernatural yang dialami Prana.</p>
+                  </div>
+                  <div class="tmbl-buku">
+                    <a href="https://dinikd25.blogspot.com/2021/05/journal-of-terror-by-sweta-kartika-part.html" class="tmblbuku">Baca Selengkapnya</a>
+                  </div>
+                </div>
+                <div class="slide">
+                  <img src="img/801.jpg">
+                  <div class="Judulbuku">Giselle</div>
+                  <div class="sinopsis">
+                  <p>Giselle merupakan pementasan balet dengan kisah kelam, yaitu tokoh giselle yang meninggal akibat pengkhianatan kekasihnya yang kemudian 
+                    menghantui hutan.</p>
+                  </div>
+                  <div class="tmbl-buku">
+                    <a href="https://dinikd25.blogspot.com/2021/05/giselle-akiyoshi-rikako.html" class="tmblbuku">Baca Selengkapnya</a>
+                  </div>
+                </div>
+
+              </div>
+              </div>
+            </div>
+        </div>
+      </section>
+
+
+
+      <!---->
+      <!--TEAM-->
+      <!---->
+  <section id="team">
+    <div class="wrapper">
+      <h1 class="title">Our Team</h1>
+      <div class="wrapper-card">
+
+          <div class="card">
+            <img src="img/pemandangan.jpg" alt="card background" class="card-img">
+            <img src="img/rizky.jpeg" alt="profile image" class="profile-img">
+            <h1>Rizky Rohmad Ramdhoni</h1>
+            <p>NIM   : 12201404</p>
+            <p>Kelas  : 12.2A.04</p>
+            <span> Sistem Informasi</span>
+            <span>UBSI Cut Mutia</span>
+            <ul class="sosial_media">
+               <li><a href="https://www.instagram.com/rr_ramdhoni_/"><i class="fab fa-instagram"></i></a></li>
+               <li><a href="rizkyramdhony@gmail.com"><i class="fa fa-envelope" area-hidden="true"></i></a></li>
+               <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <img src="img/pemandangan.jpg" alt="card background" class="card-img">
+            <img src="img/thania.jpg" alt="profile image" class="profile-img">
+            <h1>Thania Nababan</h1>
+            <p>NIM   : 12201147</p>
+            <p>Kelas  : 12.2A.04</p>
+            <span> Sistem Informasi</span>
+            <span>UBSI Cut Mutia</span>
+            <ul class="sosial_media">
+               <li><a href="https://www.instagram.com/thanianbbn/"><i class="fab fa-instagram"></i></a></li>
+               <li><a href="thaniadwiaprilianababan@gmail.com"><i class="fa fa-envelope" area-hidden="true"></i></a></li>
+               <li><a href="https://m.facebook.com/profile.php?id=100064220888298&ref=content_filter"><i class="fab fa-facebook-square"></i></a></li>
+            </ul>
+          </div>
+
+
+          <div class="card">
+            <img src="img/pemandangan.jpg" alt="card background" class="card-img">
+            <img src="img/dini.jpg" alt="profile image" class="profile-img">
+            <h1>Dini Kusuma Dewi</h1>
+            <p>NIM   : 12200809</p>
+            <p>Kelas  : 12.2A.04</p>
+            <span> Sistem Informasi</span>
+            <span>UBSI Cut Mutia</span>
+            <ul class="sosial_media">
+               <li><a href="https://www.instagram.com/dinnkd/"><i class="fab fa-instagram"></i></a></li>
+               <li><a href="dinikd25@gmail.com"><i class="fa fa-envelope" area-hidden="true"></i></a></li>
+               <li><a href="https://m.facebook.com/dini.kusumadewi.9"><i class="fab fa-facebook-square"></i></a></li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <img src="img/pemandangan.jpg" alt="card background" class="card-img">
+            <img src="img/feri.jpg" alt="profile image" class="profile-img">
+            <h1>Feri Ramdhani</h1>
+            <p>NIM   : 12200646</p>
+            <p>Kelas  : 12.2A.04</p>
+            <span> Sistem Informasi</span>
+            <span>UBSI Cut Mutia</span>
+            <ul class="sosial_media">
+               <li><a href="https://www.instagram.com/dhani_fery/"><i class="fab fa-instagram"></i></a></li>
+               <li><a href="feryr4@gmail.com"><i class="fa fa-envelope" area-hidden="true"></i></a></li>
+               <li><a href="https://m.facebook.com/fery1997"><i class="fab fa-facebook-square"></i></a></li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <img src="img/pemandangan.jpg" alt="card background" class="card-img">
+            <img src="img/talita.jpeg" alt="profile image" class="profile-img">
+            <h1>Talita Kurnia Morinda</h1>
+            <p>NIM   : 12200797</p>
+            <p>Kelas  : 12.2A.04</p>
+            <span> Sistem Informasi</span>
+            <span>UBSI Cut Mutia</span>
+            <ul class="sosial_media">
+               <li><a href="https://www.instagram.com/talitakurniaa/"><i class="fab fa-instagram"></i></a></li>
+               <li><a href="mailto:talitamorinda@gmail.com"><i class="fa fa-envelope" area-hidden="true"></i></a></li>
+               <li><a href="https://www.facebook.com/azure.dev.9"><i class="fab fa-facebook-square"></i></a></li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <img src="img/pemandangan.jpg" alt="card background" class="card-img">
+            <img src="img/utha2.jpeg" alt="profile image" class="profile-img">
+            <h1>Ahmad Putra Syahbani</h1>
+            <p>NIM   : 12200473</p>
+            <p>Kelas  : 12.2A.04</p>
+            <span> Sistem Informasi</span>
+            <span>UBSI Cut Mutia</span>
+            <ul class="sosial_media">
+               <li><a href="https://www.instagram.com/utha.syahbani97/"><i class="fab fa-instagram"></i></a></li>
+               <li><a href="mailto:ahmdputra@gmail.com"><i class="fa fa-envelope" area-hidden="true"></i></a></li>
+               <li><a href="https://m.facebook.com/ahmad.putras1"><i class="fab fa-facebook-square"></i></a></li>
+            </ul>
+          </div>
+
+
+
+        </div>
+      </div>
+  </section>
+
+  <!--CONTACT-->
+  <section id="contact">
+    <div class="wrapper">
+      <div class="footer">
+        <div class="footer-section">
+          <h3>RuangBUKU</h3>
+          <p>Merupakan Sebuah website perpustakaan berbasis online</p>
+        
+      </div>
+      <div class="footer-section">
+          <h3>About</h3>
+           <p> Perpustakaan merupakan jembatan menuju penguasaan ilmu pengetahuan, dapat memberikan kontribusi penting
+            bagi terbukanya akses informasi, serta menyediakan data yang akurat bagi proses pengambilan
+            sumber-sumber referensi bagi pengembangkan ilmu pengetahuan. Di Web Perpustakaan ini,
+            kami menyediakan buku-buku dan sinopsis dari buku tersebut yang membuat anda tertarik untuk
+            membaca bukunya.
+            </p>
+            <p>Hakikat perpustakaan adalah pusat sumber belajar dan sumber informasi bagi pemakainya
+            Tujuan kegiatan perpustakaan adalah untuk menumbuhkan minat baca pemustaka,
+            memperkenalkan teknologi informasi, membiasakan akses informasi secara mandiri
+            serta menumbuhkan bakat dan minat pemustaka.</p>
+      </div>
+
+      <div class="footer-section">
+          <h3>Contact Us</h3>
+          <div class="contact_us">
+             <p>Ahmad Putra Syahbani</p>
+          </div>
+          <div class="contact_us">
+             <p>Dini Kusuma Dewi</p>
+          </div>
+          <div class="contact_us">
+             <p>Feri Ramdhani</p>
+          </div>
+          <div class="contact_us">
+             <p>Rizky Rohmad Ramdhoni</p>
+        </div>
+        <div class="contact_us">
+             <p>Talita Kurnia Morinda</p>
+        </div>
+        <div class="contact_us">
+             <p>Thania Nababan</p>
+        </div>
+        <div class="alamat">
+             <p>Jalan Raya Perjuangan , Ruko Roxy Taman Kebalen Indah , Blok C2/63-65 , Babelan , Bekasi Utara</p>
+             <p>081291422848(HP)</p>
+        </div>
+
+      </div>
+    </div>
+      
+    </div>
+  </section>
+
+  <!--COPYRIGHT-->
+
+  <div class="copyright">
+    <div class="wrapper">
+        &copy; 2021 - <b>Perpustakaan Kelompok 4.</b> All Rights Reserved.
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+
+
+</body>
+</html>

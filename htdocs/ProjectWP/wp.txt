@@ -1,0 +1,16 @@
+membuat website dengan tema web informasi perpustakaan dan isi konten dari web ini 
+berisi home , genre buku ,team ,contact dan login yang ditampilkan dalam satu halaman 
+
+1.dan pada bagian genre ini saya membuat wrapper untuk alasnya sebesar 1100px 
+menyesuaikan dgn ukuran sebelumnya, 
+2. membuat class title untuk genre buku
+3. selanjutnya membuat class container untuk menampung lima box dimana dalam satu box mewakili
+   satu genre dan didalam box ini terdiri dari 2 buku.
+4  dan didalam class box saya membuat tag p untuk memberikan judul dari genre
+5, dan selanjutnya saya membuat class slider menggunakan tag div. dimana didalam
+   class slider ini akan ada 2 jenis buku 
+6. dan kedua jenis buku ini saya buat menggunakan class slide jadi satu slide mewakili 1 buku
+   jadi didalam class slide ada cover buku, judul buku sinopsis dan keterangan baca selengkapnya
+   baca selengkapnya ini akan mengarahkan ke link blog sinopsis yang lebih lengkap dari buku ini
+7. dan pada class slide ini saya menggunakan animasi transisi bergerak menggunakan keyframes 
+   yang terus bergerak secara infinite  

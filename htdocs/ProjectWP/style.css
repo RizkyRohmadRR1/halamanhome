@@ -1,0 +1,685 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	text-decoration: none;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+.wrapper
+{
+  width: 1100px;
+  margin: auto;
+  position: relative;
+}
+
+
+/*Jam & Tanggal*/
+
+
+#jam
+{
+	float: right;
+  margin-top: -5px;
+	margin-bottom: 3px;
+	font-size: 13px;
+	font-family: 'Quicksand';
+	font-weight: bold;
+	border: 1px solid #000;
+	text-decoration: none;
+	padding: 4px 10px 4px 10px;
+	border-radius: 10px;
+}
+
+.tanggal
+{
+	float: left;
+	width: 100%;
+	margin-top: 8px;
+	margin-bottom:-5px;
+	font-size: 13px;
+  font-family: 'Quicksand';
+  font-weight: bold;
+
+}
+
+
+
+
+
+/*MARQUEE*/
+p marquee
+{
+  background-color: #364f6b;
+  font-family: 'Quicksand';
+  color: white;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-size: 25px;
+
+}
+
+
+/*Menu dan logo*/
+
+.logo a
+{
+	font-size: 50px;
+	float: left;
+  font-weight: 600;
+	font-family: 'Quicksand';
+	color: #364f6b;
+  margin-bottom: 13px;
+
+}
+
+
+.menu
+{
+  float: right;
+}
+nav
+{
+	width: 100%;
+	margin:auto;
+	display: flex;
+	line-height:55px;
+	position: sticky;
+	position: -webkit-sticky;
+	background: #ffffff;
+  top: 0;
+	z-index: 3;
+	border-bottom: 1px solid #364f6b;
+
+}
+
+nav ul
+ {
+	list-style-type: none;
+	marker:0;
+	padding: 0;
+	overflow: hidden;
+
+
+}
+
+nav ul li
+ {
+	float: left;
+
+}
+
+nav ul li a
+ {
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	padding: 0px 16px 0px 16px;
+	text-decoration: none;
+	font-family: 'Quicksand';
+  box-shadow: inset  0 0 0 #fff ;
+  transition: ease-out 0.5s;
+  outline: none
+
+}
+
+nav ul li a:hover
+{
+  	border-radius: 17px;
+  	margin-top: 20px;
+  	margin-bottom: 10px;
+  	padding: 10px 15px 10px 15px;
+  	color: #ffffff;
+  	cursor: pointer;
+  	font-weight: bold;
+    box-shadow: inset  200px 0 0 0 #2978b5 ;
+  	text-decoration: none;
+
+}
+
+.menu .active a {
+    background: #2978b5;
+  	border-radius: 17px;
+  	margin-top: 20px;
+  	padding: 10px 15px ;
+  	color: #ffffff;
+  	cursor: pointer;
+  	font-weight: bold;
+  	text-decoration: none;
+}
+
+.tmbl {
+	background: #2978b5;
+	border-radius: 17px;
+	margin-top: 20px;
+	padding: 10px 15px 10px 15px;
+	color: #ffffff;
+  box-shadow: inset  0 0 0 #fc5185 ;
+  transition: ease-out 0.5s;
+  outline: none;
+	cursor: pointer;
+	font-weight: bold;
+
+}
+
+.tmbl:hover {
+	box-shadow: inset  200px 0 0 0 #fc5185 ;
+	text-decoration: none;
+}
+
+
+/*Home*/
+section {
+	margin: auto;
+	display: flex;
+}
+section .slogan {
+	margin:auto;
+	display: flex;
+}
+.gmbr img {
+  width: 600px;
+  height: 340px;
+  float: left;
+  margin-top: 50px;
+}
+
+
+.kolom {
+	margin-top: 70px;
+	margin-bottom: 70px;
+  	float: right;
+}
+.kolom .deskripsi {
+	font-size: 20px;
+	font-weight:bold;
+  margin-bottom: 20px;
+  margin-top: 20px;
+	font-family: 'Comic Sans ms';
+	color: #364f6b;
+}
+.kolom h2 {
+  font-family: 'Comic sans ms';
+  color: #364f6b;
+  font-size: 45px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  width: 100%;
+  line-height: 50px;
+
+}
+
+.kolom p {
+  font-family:'Quicksand';
+  font-size: 15px;
+  margin-bottom: 40px;
+
+}
+
+a.tmbl2 {
+  background: #2978b5;
+	border-radius: 17px;
+	margin-top: 50px;
+	padding: 12px 17px 12px 17px;
+	color: #ffffff;
+  text-decoration: none;
+	cursor: pointer;
+  box-shadow: inset  0 0 0 #f29878b5 ;
+  transition: ease-out 0.3s;
+	font-weight: bold;
+}
+a.tmbl2:hover{
+  background: #fc5185;
+  box-shadow: inset  200px 0 0 0 #fc5185 ;
+}
+
+
+/*Genre Buku*/
+
+.title {
+  text-transform: uppercase;
+  font-size: : 3.5rem;
+  letter-spacing: 3px;
+  margin-right: -3px;
+  margin: 5rem 0;
+  text-align: center;
+  position: relative;
+  color:#364f6b;
+  font-family: 'Quicksand';
+
+}
+
+.title:after {
+  content: "";
+  width: 5rem;
+  height: .3rem;
+  background-color: #364f6b;
+  position: absolute;
+  box-sizing: -1rem;
+  top:3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2rem;
+}
+.Container {
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+.box {
+  width: 200px;
+  height: 350px;
+  border-radius: 10px;
+  flex-direction: column;
+  box-shadow: 2px  10px 12px rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin :20px 10px;
+  background: #000;
+}
+
+.box p {
+	margin-top: 7px;
+	height: 10px;
+}
+
+.buku {
+  width: 200px;
+  flex-direction: column;
+  text-align:center;
+  font-family: 'Quicksand';
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.box .buku {
+  background: black;
+  color: white;
+  border-radius: 10px 10px 0px 0px;
+  margin-bottom: 10px;
+}
+.box:hover {
+  background-color:#000;
+  transform-style:preserve-3d;
+  transform: scale(1.07);
+  transition: all ease 0.5s;
+}
+
+.box img {
+  height: 170px;
+  width: 200px;
+}
+
+.Judulbuku {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  font-size: 15px;
+  text-align: center;
+  font-family: 'Quicksand';
+  font-weight: bold;
+  background-color: #ebeef8;
+}
+.sinopsis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  background-color: #ebeef8;
+  height: 100px;
+}
+
+.sinopsis p {
+  font-family: 'Quicksand';
+  text-align: center;
+  font-size: 10px;
+
+}
+
+/*Slide*/
+
+.slider {
+  box-sizing: border-box;
+  width: 200px;
+  height: 320px;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  float: left;
+}
+
+.slide {
+  width: 100%;
+  transition: 0.1s;
+  position: relative;
+  animation: 20s slidy infinite;
+  float: left;
+}
+@keyframes slidy {
+  0%{left:0%;}
+  10%{left:-0%;}
+  20%{left:-0%;}
+  30%{left:-100%;}
+  30%{left:-100%;}
+  20%{left:-0%;}
+  10%{left:-0%;}
+  0%{left:-0%;}
+
+}
+
+
+/*Baca Selengkapnya*/
+.tmbl-buku {
+  background: #2978b5;
+  border-radius: 0px 0px 5px 5px;
+  border-top: 20px;
+  height: 30px;
+  box-shadow: 2px 5px 3px rgba(0,0,0,0.5);
+  text-align: center;
+
+}
+
+.tmblbuku {
+  border-radius: 3px;
+  width: 200px;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.tmblbuku:hover {
+  transform-style: preserve-3d;
+  transform: scale(1.07);
+  transition: all ease 0.4s;
+  color: black;
+}
+
+
+
+ /*TEAM*/
+
+
+
+.wrapper-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.card {
+  width: 230px;
+  background-color: #ebeef8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+  box-shadow: 2px  10px 12px rgba(0,0,0,0.5);
+
+}
+.card:hover {
+  background-color:#ebeef8;
+  transform-style:preserve-3d;
+  transform: scale(1.03);
+  transition: all ease 0.5s;
+}
+
+.card .card-img {
+  width: 100%;
+  height: 11rem;
+  object-fit: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+
+}
+
+.profile-img {
+  width: 6.3rem;
+  height: 6.3rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 0.5rem solid #ebeef8;
+  margin-top: -5rem;
+  z-index: 2;
+}
+.card h1 {
+  font-family: 'Quicksand';
+  letter-spacing: 1.5px;
+  font-size: 0.97rem;
+  font-weight: bold;
+  margin: 0.7rem 0;
+}
+.card p {
+  font-family: 'Quicksand';
+  letter-spacing: 1px;
+  font-size: 0.6rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 3px 0;
+}
+.card span {
+  font-family: 'Quicksand';
+  letter-spacing: 1px;
+  font-size: 0.73rem;
+  font-weight: bolder;
+  text-align: center;
+  margin: 2px 0;
+}
+
+
+/*SOSMED*/
+
+.sosial_media {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0;
+  margin-top: 1rem;
+  border-top: 1px solid rgba(0,0,0,.1);
+}
+.card ul li a{
+  background: #ebeef8;
+  border-radius: 0;
+  margin:0px 0.4rem;
+  padding: 5px 16px 5px 16px;
+  color: #ffffff;
+}
+.fa-instagram{
+  color: #e4405f;
+  font-size: 1.2rem;
+}
+.fa-facebook-square{
+    color: #3b5598;
+    font-size: 1.2rem;
+}
+.fa-envelope{
+    color: #3b60c4;
+    font-size: 1.2rem;
+}
+}
+.card ul li a{
+  background: #ebeef8;
+  border-radius: 0;
+  margin:0px 0.4rem;
+  padding: 5px 16px 5px 16px;
+  color: #ffffff;
+}
+
+.fa-envelope:hover{
+    color: #08851b;
+    font-size: 1.2rem;
+}
+.fa-instagram:hover{
+  color: #45e19f;
+  font-size: 1.2rem;
+}
+.fa-facebook-square:hover{
+    color: #45e19f;
+    font-size: 1.2rem;
+}
+
+
+/*CONTACT*/
+#contact {
+  background: #dedede;
+  padding: 50px 0;
+  margin-top: 5rem;
+}
+
+.footer {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+
+}
+
+.footer-section{
+  width:30%;
+  margin: 0 auto;
+}
+
+.footer-section h3 {
+  font-family: 'Comic sans ms';
+  font-weight: 800;
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #364f6b;
+  width: 100%;
+  line-height: 50px;
+}
+
+.footer-section p {
+  font-size: 15px;
+  font-family: 'Quicksand';
+  margin-bottom: 10px;
+}
+.footer-section ul {
+  background: #dedede;
+  border-radius: 0;
+  margin:0px 0.2rem;
+  padding: 2px 10px;
+  color: #ffffff;
+}
+
+
+.contact_us {
+  width: auto;
+  display: flex;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.contact_us p {
+  width: 100%;
+
+}
+.alamat p{
+  margin-top: 5px;
+}
+
+/*Copyright*/
+
+.copyright {
+  text-align: center;
+  width: 100%;
+  font-family: 'Comic sans ms';
+  padding: 30px 0;
+  background: #000;
+  color:#fff;
+
+}
+
+
+/*RESPONSIP*/
+@media screen and (min-width: 1100px){
+  .wrapper-card{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card{
+    margin:10px;
+    margin-bottom: 3rem;
+  }
+}
+
+
+@media screen and (max-width: 1100px){
+  .wrapper {
+    width: 100%;
+  }
+
+  .logo  a{
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  nav .menu {
+    width: 100%;
+    margin: 0;
+
+  }
+    nav .menu ul{
+    text-align: center;
+    margin: auto;
+    line-height: 60px;
+
+  }
+    nav .menu ul li{
+    display: inline-block;
+    float: none;
+  }
+
+  section {
+    display: block;
+    margin: auto;
+
+  }
+    #genrebuku{
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+
+  }
+
+  .gmbr img {
+    display: block;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 5rem;
+  }
+  .kolom {
+    display: block;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+
+  .Container {
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-section {
+    width: 100%;
+    display: block;
+    margin: auto;
+    margin-bottom: 3rem;
+    text-align: center;
+
+  }
+}
